@@ -1,0 +1,11 @@
+Safari Issues:
+1. Safari jumps to focus the Autoplay video on iOS10.x. This causes a page jump.
+2. Safari does not render inline SVG correctly when base href is used. One option is to use external SVG instead of inline SVG.
+
+Chrome Issues:
+1. If an image from 3rd party domain is requested using simple <img /> tag on a browser and then if the same image is requested via AJAX/XHR on the same browser, you get CORS error saying CORS header not being present. This is primarily because the cached image was used to serve which did not have that header. Workaround is to add a random number to the img request when it is made via AJAX/XHR so that a new request is initiated.
+
+IE/Edge Issues:
+
+Firefox Issues:
+
